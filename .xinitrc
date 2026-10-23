@@ -20,7 +20,7 @@ xinput set-prop 10 "libinput Natural Scrolling Enabled" 1 &
 # ----------------------------
 # WALLPAPER
 # ----------------------------
-feh --bg-scale ~/Media/random\ shit\ pictures/pc.png &
+feh --bg-scale ~/Media/random\ shit\ pictures/candle.jpg &
 
 # ----------------------------
 # COMPOSITOR
