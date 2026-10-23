@@ -3,7 +3,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -11,13 +11,13 @@ static const char *fonts[]          = { "Sun Gallant:size=13" };
 static const char dmenufont[]       = "Sun Gallant:size=12";
 #define COORDINATES_STYLE "[x%d y%d]" /* The style of coordinates displayed in bar, do not remove %d. */
 
-static MAYBE_CONST char normbgcolor[]     = "#181216";
-static MAYBE_CONST char normbordercolor[] = "#495b4b";
-static MAYBE_CONST char normfgcolor[]     = "#d6c9b8";
+static MAYBE_CONST char normbgcolor[]     = "#da4115";
+static MAYBE_CONST char normbordercolor[] = "#a72606";
+static MAYBE_CONST char normfgcolor[]     = "#25302a";
 
-static MAYBE_CONST char selfgcolor[]      = "#d6c9b8";
-static MAYBE_CONST char selbordercolor[]  = "#495b4b";
-static MAYBE_CONST char selbgcolor[]      = "#181216";
+static MAYBE_CONST char selfgcolor[]      = "#25302a";
+static MAYBE_CONST char selbordercolor[]  = "#a72606";
+static MAYBE_CONST char selbgcolor[]      = "#da4115";
 
 static MAYBE_CONST char *colors[][3] = {
        /*               fg           bg           border   */
@@ -37,9 +37,9 @@ static const int user_bh = 0;
 #endif
 
 #if BAR_PADDING
-static const int top_vertpad = 0;          /* top vertical padding of bar */ 
+static const int top_vertpad = 5;          /* top vertical padding of bar */ 
 static const int bottom_vertpad = 0;       /* bottom vertical padding of bar */
-static const int left_sidepad = 0;         /* left horizontal padding of bar */
+static const int left_sidepad = 5;         /* left horizontal padding of bar */
 static const int right_sidepad = 1500;       /* right horizontal padding of bar */
 #endif
 
