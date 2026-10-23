@@ -11,13 +11,13 @@ static const char *fonts[]          = { "Sun Gallant:size=13" };
 static const char dmenufont[]       = "Sun Gallant:size=12";
 #define COORDINATES_STYLE "[x%d y%d]" /* The style of coordinates displayed in bar, do not remove %d. */
 
-static MAYBE_CONST char normbgcolor[]     = "#86938c";
-static MAYBE_CONST char normbordercolor[] = "#000000";
-static MAYBE_CONST char normfgcolor[]     = "#060604";
+static MAYBE_CONST char normbgcolor[]     = "#181216";
+static MAYBE_CONST char normbordercolor[] = "#495b4b";
+static MAYBE_CONST char normfgcolor[]     = "#d6c9b8";
 
-static MAYBE_CONST char selfgcolor[]      = "#060604";
-static MAYBE_CONST char selbordercolor[]  = "#788999";
-static MAYBE_CONST char selbgcolor[]      = "#86938c";
+static MAYBE_CONST char selfgcolor[]      = "#d6c9b8";
+static MAYBE_CONST char selbordercolor[]  = "#495b4b";
+static MAYBE_CONST char selbgcolor[]      = "#181216";
 
 static MAYBE_CONST char *colors[][3] = {
        /*               fg           bg           border   */
@@ -37,10 +37,10 @@ static const int user_bh = 0;
 #endif
 
 #if BAR_PADDING
-static const int top_vertpad = 2;          /* top vertical padding of bar */ 
+static const int top_vertpad = 0;          /* top vertical padding of bar */ 
 static const int bottom_vertpad = 0;       /* bottom vertical padding of bar */
-static const int left_sidepad = 125;         /* left horizontal padding of bar */
-static const int right_sidepad = 125;       /* right horizontal padding of bar */
+static const int left_sidepad = 0;         /* left horizontal padding of bar */
+static const int right_sidepad = 1500;       /* right horizontal padding of bar */
 #endif
 
 /* tagging */
