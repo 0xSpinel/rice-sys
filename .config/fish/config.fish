@@ -24,9 +24,8 @@ function rice --description "Commit + push one rice iteration (vxwm config.h + k
         git add config.h
         if not git diff --cached --quiet
             git commit -q -m $msg
-            and git push -q github main
             and git push -q origin main
-            echo "[rice] vxwm: committed + pushed"
+            echo "[rice] vxwm: committed + pushed (codeberg)"
         else
             echo "[rice] vxwm: nothing to commit"
         end
@@ -35,8 +34,7 @@ function rice --description "Commit + push one rice iteration (vxwm config.h + k
     git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" add "$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/current-theme.conf" "$HOME/.xinitrc"
     if not git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" diff --cached --quiet
         git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" commit -q -m $msg
-        and git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" push -q origin master
-        echo "[rice] dotfiles: committed + pushed (kitty/xinitrc)"
+        echo "[rice] dotfiles: committed locally (dotfiles has no remote since GitHub repo deleted)"
     else
         echo "[rice] dotfiles: nothing to commit"
     end

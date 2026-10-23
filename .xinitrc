@@ -25,7 +25,7 @@ feh --bg-scale ~/Media/random\ shit\ pictures/pc.png &
 # ----------------------------
 # COMPOSITOR
 # ----------------------------
-(sleep 1 && picom --config ~/.config/picom/picom.conf) &
+(sleep 1 && vcompmgr) &
 
 xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr
